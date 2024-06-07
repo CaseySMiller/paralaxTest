@@ -1,16 +1,17 @@
 <h2>homepage</h2>
 
-  <div id="scene">
-    <div data-depth="0.2">My first Layer!</div>
-    <div data-depth="0.6">My second Layer!</div>
-  </div>
+<div id="scene">
+  {{!-- here we define our elements. Having the svg's inside of divs broke it --}}
+  <img src="/assets/images/3rd_wave.svg" data-depth="0.2" alt="waves" />
+  <img src="/assets/images/2nd_wave.svg" data-depth="0.4" alt="waves again" />
+  <img src="/assets/images/1st_wave.svg" data-depth="0.6" alt="the penultimate wave"/>
+  <img src="/assets/images/4th_wave.svg" data-depth="0.8" alt="the top wave" />
+</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+{{!-- import the cdn for parallax --}}
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+></script>
 
-<script src="./assets/scripts/parallax.js"></script>
-
-	{{!-- <script>
-	var scene = document.getElementById('scene');
-	var parallax = new Parallax(scene);
-	</script> --}}
-
+{{!-- import our script to run paralax --}}
+<script src="/assets/scripts/parallax.js"></script>
