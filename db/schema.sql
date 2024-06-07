@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS parallax_db;
+CREATE DATABASE parallax_db;
